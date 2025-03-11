@@ -1,2 +1,1 @@
-# JobsAdda
-A webapp for Job seeker and Recruiters 
+Setting up React project using Vite
