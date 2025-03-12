@@ -1,0 +1,28 @@
+
+[
+    {
+        "name": "netflix",
+        "path": "/companies/netflix.png",
+        "id": 1
+    },
+    {
+        "name": "atlassian",
+        "path": "/companies/atlassian.svg",
+        "id": 1
+    },
+    {
+        "name": "ibm",
+        "path": "/companies/ibm.svg",
+        "id": 1
+    },
+    {
+        "name": "uber",
+        "path": "/companies/uber.svg",
+        "id": 1
+    },
+    {
+        "name": "amazon",
+        "path": "/companies/amazon.svg",
+        "id": 1
+    }
+]
