@@ -6,9 +6,9 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-reac
 export const Header = () => {
   return (
     <>
-    <nav className='py-4 flex justify-between items-center' >
+    <nav className='pt-4 flex justify-between items-center' >
       <Link>
-        <img src="/jobs_adda.png" className='h-20' />
+        <img src="/jobs_adda.png" className='h-42' />
       </Link>
 
       <Button variant="outline">Login</Button>
