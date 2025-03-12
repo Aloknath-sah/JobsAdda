@@ -7,6 +7,7 @@ import { Onboarding } from './pages/Onboarding'
 import { ThemeProvider } from './components/ui/theme-provider'
 import { Job } from './pages/job'
 import { PostJob } from './pages/PostJob'
+import { ProtectedRoutes } from './components/ProtectedRoutes'
 
 const router = createBrowserRouter([
   {
@@ -18,11 +19,19 @@ const router = createBrowserRouter([
       },
       {
         path: '/onboarding',
-        element: <Onboarding/>
+        element: (
+          <ProtectedRoutes>
+            <Onboarding/>
+          </ProtectedRoutes>
+        ) 
       },
       {
         path: '/jobs',
-        element: <Job/>
+        element: (
+          <ProtectedRoutes>
+            <Job/>
+          </ProtectedRoutes>
+        ) 
       },
       {
         path: '/post-job',
