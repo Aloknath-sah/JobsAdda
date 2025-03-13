@@ -1,4 +1,6 @@
-const { useSession } = require("@clerk/clerk-react")
+import { useState } from "react";
+
+import { useSession } from "@clerk/clerk-react";
 
 const useFetch = (cb,options = {}) => {
     const [data, setData] = useState(undefined);
@@ -12,7 +14,7 @@ const useFetch = (cb,options = {}) => {
         setError(null);
 
         try {
-            const supabaseAccessToken = await session.getToken({
+            const supabaseAccessToken = await session?.getToken({
                 template: "supabase"
               });
             const response = await cb(supabaseAccessToken, options, ...args)

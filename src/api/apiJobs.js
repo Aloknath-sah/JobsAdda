@@ -4,7 +4,7 @@ export async function getJobs(token, {location, company_id, searchQuery}) {
     console.log("🟢 getJobs received token:", token);
     const supabase = supabaseClient(token)
 
-    let query = supabase.from("jobs").select("*")
+    let query = supabase.from("jobs").select("*, company:companies(name, logo_url), saved: saved_jobs(id)")
     console.log("query", query)
 
     if(location) {
