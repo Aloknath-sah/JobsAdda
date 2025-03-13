@@ -8,6 +8,7 @@ import { ThemeProvider } from './components/ui/theme-provider'
 import { Job } from './pages/job'
 import { PostJob } from './pages/PostJob'
 import { ProtectedRoutes } from './components/ProtectedRoutes'
+import { JobListing } from './pages/JobListing'
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         path: '/jobs',
         element: (
           <ProtectedRoutes>
-            <Job/>
+            <JobListing/>
           </ProtectedRoutes>
         ) 
       },
