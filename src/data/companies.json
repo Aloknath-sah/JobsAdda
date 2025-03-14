@@ -8,21 +8,21 @@
     {
         "name": "atlassian",
         "path": "/companies/atlassian.svg",
-        "id": 1
+        "id": 2
     },
     {
         "name": "ibm",
         "path": "/companies/ibm.svg",
-        "id": 1
+        "id": 3
     },
     {
         "name": "uber",
         "path": "/companies/uber.svg",
-        "id": 1
+        "id": 4
     },
     {
         "name": "amazon",
         "path": "/companies/amazon.svg",
-        "id": 1
+        "id": 5
     }
 ]

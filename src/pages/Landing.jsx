@@ -63,8 +63,8 @@ export const Landing = () => {
           className="w-full max-w-sm"
         >
           <CarouselContent className="flex gap-5 items-center">
-            {companies.map(({ name, id, path }) => (
-              <CarouselItem key={id} className="basis-1/3 lg:basis-1/4">
+            {companies.map(({ name, id, path }, index) => (
+              <CarouselItem key={id ?? `company-${index}`} className="basis-1/3 lg:basis-1/4">
                 <img src={path} alt={name} className="h-9 object-contain" />
               </CarouselItem>
             ))}
