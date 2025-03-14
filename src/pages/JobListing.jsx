@@ -47,7 +47,7 @@ export const JobListing = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     let formData = new FormData(e.target);
-    const query = formData.get("search-query");
+    const query = formData?.get("search-query");
     if (query) setSearchQuery(query);
   };
 
@@ -91,10 +91,10 @@ export const JobListing = () => {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {State.getStatesOfCountry("IN").map((state) => {
+              {State.getStatesOfCountry("IN")?.map((state) => {
                 return (
-                  <SelectItem key={state.isoCode} value={state.name}>
-                    {state.name}{" "}
+                  <SelectItem key={state?.isoCode} value={state?.name}>
+                    {state?.name}{" "}
                   </SelectItem>
                 );
               })}
@@ -113,7 +113,7 @@ export const JobListing = () => {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {companies.map(({ name, id }) => {
+              {companies?.map(({ name, id }) => {
                 return (
                   <SelectItem key={name} value={id}>
                     {name}{" "}
@@ -139,7 +139,7 @@ export const JobListing = () => {
       {loadingJobs === false && (
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {dataJobs?.length ? (
-            dataJobs.map((job) => {
+            dataJobs?.map((job) => {
               return (
                 <JobCard
                   key={job.id}
